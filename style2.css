@@ -28,9 +28,12 @@ header {
   }
 .container1{
     background-color: rgb(212, 194, 173);
-    margin-top: 90px;
-    width: auto;
+    width: 958px;
     height: 600px;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     padding: 28px;
     background-image: url("./imgs/Cafe.png");

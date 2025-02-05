@@ -25,9 +25,11 @@ header {
   }
 
 #findCEP {
-    width: 775px;
-    height: 410px;
-    background-color: #eddec1;
+    width: 958px;
+    height: 600px;
+    background-image: url("./imgs/Cafe.png");
+    background-size: cover;
+    padding: 28px;
     position: absolute;    
     top: 50%;
     left: 50%;
