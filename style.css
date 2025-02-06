@@ -25,9 +25,11 @@ header {
   }
 
 #findCEP {
-    width: 775px;
-    height: 410px;
-    background-color: #eddec1;
+    width: 958px;
+    height: 600px;
+    background-image: url("./imgs/Cafe.png");
+    background-size: cover;
+    padding: 28px;
     position: absolute;    
     top: 50%;
     left: 50%;
@@ -37,10 +39,11 @@ header {
 }
 
 #findCEP > .container1 {
-    padding: 20px 0px 20px 30px;
+    padding: 20px 0px 20px 60px;
 }
 
 #findCEP > .container1 h1 {
+    font-size: 50px;
     font-family: "Kay Pho Du", serif;
     margin: 10px 0px 17px 0px;
 
@@ -54,13 +57,13 @@ header {
 #findCEP > .container1 > form {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 25px;
 
     & .form-group{
         display: flex;
         flex-direction: column;
         font: medium;
-        font-size: 20px;
+        font-size: 30px;
 
         & input {
             max-width: 200px;
@@ -73,7 +76,7 @@ header {
     width: 140px;
     border: none;
     background-color: #2A57A6;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     border-radius: 6px;
     padding: 7px;
@@ -85,7 +88,18 @@ input {
     border-radius: 6px;
 }
 
+#findCEP > .container2 {
+    width: 482px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
-/* #findCEP > .container2{
-    background-color: white;
-} */
+    & #cepResult {
+        background-color: white;
+        padding: 10px;
+        font-size: 40px;
+        width: 360px;
+        margin: 80px 75px 0px 0px;
+        border-radius: 6px;
+    }
+}
