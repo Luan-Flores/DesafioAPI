@@ -28,6 +28,10 @@
                 <form action="">
                     <input type="text" id="inputCep" name="inputCep">
                 </form>
+                <div class="alert">
+                    <img src="" width="20px" alt="" id="imgErro">
+                    <p id="pErro"></p>
+                </div>
             </div>
             <div class="box2">
                 <button id="btnBuscar">Buscar</button>
@@ -41,9 +45,9 @@
             </div>
             <div class="box4">
                 <div class="result">
-                    <a href="">
-                    <img src="./imgs/copy1.png" alt="" class="imgCopy">
-                    </a>
+                    
+                    <img src="./imgs/whitez.png" alt="" onclick="this.src='./img/whitez.png'" class="imgCopy" id="image" onmouseover="this.src='./imgs/blacks.png';" onmouseout="this.src='./imgs/whitez.png'">
+                    
                     <ul class="ulRes">
                         <li class="liRes" id="logradouro">Logradouro: </li>
                         <li class="liRes" id="bairro">Bairro: </li>
