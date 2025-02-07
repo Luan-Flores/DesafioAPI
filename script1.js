@@ -13,7 +13,7 @@ form.addEventListener('submit', async function req(e) {
         const logradouro = document.getElementById("logradouro").value;
         
         if (localidade.trim() || uf.trim() || logradouro.trim() === ''){
-            divResultado.innerHTML = `Nada encontrado, tente novamente.`
+            divResultado.innerHTML = `Preencha todos os campos.`
         }
         
         const url = `https://viacep.com.br/ws/${uf}/${localidade}/${logradouro}/json`
