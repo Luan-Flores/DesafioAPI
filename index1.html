@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kay+Pho+Du:wght@400;500;600;700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
-    <script src="./script.js" defer></script>
+    <script src="./script1.js" defer></script>
     <title>CEP FINDER</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -22,16 +22,12 @@
     <section id="findCEP">
         <div class="container1">
             <h1>Descubra seu CEP!</h1>
-            <form action="">
+            <form id="formCep">
                 <div class="form-group">
                     <label for="logradouro">Logradouro</label>
                     <input type="text" class="form-control" id="logradouro">
                     
                 </div>
-                <!-- <div class="form-group">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" class="form-control" id="bairro">
-                </div> -->
                 <div class="form-group">
                     <label for="localidade">Cidade</label>
                     <input type="text" class="form-control" id="localidade">
@@ -44,31 +40,17 @@
                 </div>
 
                 <button id="enviarFormFindCep">Find Cep</button>
+                <a href="./frame2.html">Encontrar Endereço por CEP</a>
             </form>
         </div>
         <div class="container2">
 
-            <!-- <div id="cepResult">
-                <label>CEP: <label id="showCep">test</label> </label>
-                <span class="material-symbols-outlined">
-                content_copy
-                </span>
-                
-            </div> -->
-            <!-- <h1>Resultado</h1> -->
+            <h1>Lista de possiveis CEPS</h1>
 
-            <div id="resultado">
-                <label for="localidade">Localidade</label>
-                <label for="localidade">Localidade</label>
-                <label for="localidade">Localidade</label>
-                <label for="localidade">Localidade</label>
-                <label for="localidade">Localidade</label>
-                <label for="localidade">Localidade</label>
+            <div id="result">
+                
             </div>
         </div>
     </section>
-
-    
-
 </body>
 </html>
