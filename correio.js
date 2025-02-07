@@ -26,13 +26,28 @@ document.getElementById("btnBuscar").addEventListener('click', async function() 
             console.error("CEP não encontrado.");
         } else {
             console.log(data);
+
             log.innerText += ` ${data.logradouro}`
             bairro.innerText += ` ${data.bairro}`
             localidade.innerText += ` ${data.localidade}`
             uf.innerText += ` ${data.uf}`
+
+            log.innerText = `Logradouro: ${data.logradouro}`
+            bairro.innerText = `Bairro: ${data.bairro}`
+            localidade.innerText = `Localidade: ${data.localidade}`
+            uf.innerText = `UF: ${data.uf}`
+
         }
     } catch (error) {
         console.error("Erro ao buscar o CEP:", error);
     }
 });
 
+//! ↓ copar as li (logradouro, bairro, localizade, uf) pra area de transferencia ↓
+
+document.querySelector(".imgCopy").addEventListener("click", function(){
+    const eliIs = document.querySelectorAll(".ulRes .liRes");
+    const elisTransformadosEmStrings = Array.from(eliIs).map(item => item.innerText);
+    const copy = elisTransformadosEmStrings.join("\n");
+    navigator.clipboard.writeText(copy)
+});
