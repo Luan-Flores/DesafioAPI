@@ -64,23 +64,23 @@ header {
         flex-direction: column;
         font: medium;
         font-size: 30px;
-        min-width: 220px;
+        min-width: 290px;
         width: fit-content;
 
         & input {
-            max-width: 200px;
+            max-width: 300px;
             padding: 10px;
         }
     }
 }
 
 #findCEP > .container1 > form > button {
-    width: 140px;
+    width: 200px;
     border: none;
     background-color: #2A57A6;
     font-size: 25px;
     color: white;
-    border-radius: 6px;
+    border-radius: 22px;
     padding: 7px;
     margin-left: 27px;
     cursor: pointer;
@@ -160,3 +160,75 @@ input {
     background-color: #555;
 }
   
+
+@media (max-width: 1200px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #result{
+        width: 325px;
+    }
+    #findCEP{
+        background-size: 100% 100%;
+        width: 808px;
+        margin: 0 auto;
+        position: none;
+    }
+    #findCEP > .container2{
+        padding: 10px;
+        
+    }
+    #findCEP > .container1 h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #findCEP{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: bisque;
+        background-image: none;
+        margin-top: 300px;
+        margin-right: 300px;
+    }
+    #findCEP > .container1 {
+        padding: 20px 0px 20px 37px;
+    }
+}
+
+@media (max-width: 320px) {
+    #findCEP > .container1 > form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+            
+        & .form-group{
+            display: flex;
+            flex-direction: column;
+            font: medium;
+            font-size: 30px;
+            min-width: 240px;
+            width: fit-content;
+    
+            & input {
+                max-width: 300px;
+                padding: 10px;
+            }
+        }
+    }
+    #formCEP{
+        width: 100%;
+    }
+    #findCEP > .container1{
+        width: 100%;
+    }
+    #findCEP> .container2 > h1{
+        font-size: 30px;
+        margin: 18px 0px 0px 18px;
+    }
+}
