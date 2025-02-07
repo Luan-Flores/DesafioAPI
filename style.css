@@ -27,7 +27,7 @@ header {
 #findCEP {
     width: 958px;
     height: 600px;
-    background-image: url("./imgs/Cafe.png");
+    background-image: url("./imgs/mainBgCep.png");
     background-size: cover;
     padding: 28px;
     position: absolute;    
@@ -64,6 +64,8 @@ header {
         flex-direction: column;
         font: medium;
         font-size: 30px;
+        min-width: 220px;
+        width: fit-content;
 
         & input {
             max-width: 200px;
@@ -90,16 +92,27 @@ input {
 
 #findCEP > .container2 {
     width: 482px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
 
     & #cepResult {
         background-color: white;
         padding: 10px;
         font-size: 40px;
         width: 360px;
-        margin: 80px 75px 0px 0px;
+        
         border-radius: 6px;
     }
+}
+
+#findCEP> .container2 > h1 {
+    font-size: 40px;
+    font-family: "Kay Pho Du", serif;
+    /* margin: 37px 0px 0px 0px; */
+   
+}
+
+#findCEP> .container2 > #resultado {
+    height: 100%;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
 }
