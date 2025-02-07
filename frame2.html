@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kay+Pho+Du:wght@400;500;600;700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
-    <script src="./script.js" defer></script>
+    <script src="./correio.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,13 +30,13 @@
                 </form>
             </div>
             <div class="box2">
-                <button>Botão</button>
+                <button id="btnBuscar">Buscar</button>
                 <a href="./index1.html">Encontrar CEP por endereço</a>
             </div>
         </section>
         <section class="contChild2">
             <div class="box3">
-                <img src="./imgs/maeTemCafeh.png" alt="imagem café mae tem café" class="imgBack">
+                <!-- <img src="./imgs/maeTemCafeh.png" alt="imagem café mae tem café" class="imgBack"> -->
                 <!-- <img src="./imgs/mail-enviado.png" alt="Gio" class="imgSobre"> -->
             </div>
             <div class="box4">
@@ -45,10 +45,10 @@
                     <img src="./imgs/copy1.png" alt="" class="imgCopy">
                     </a>
                     <ul class="ulRes">
-                        <li class="liRes">Logradouro: </li>
-                        <li class="liRes">Bairro: </li>
-                        <li class="liRes">Localidade: </li>
-                        <li class="liRes">UF: </li>
+                        <li class="liRes" id="logradouro">Logradouro: </li>
+                        <li class="liRes" id="bairro">Bairro: </li>
+                        <li class="liRes" id="localidade">Localidade: </li>
+                        <li class="liRes" id="uf">UF: </li>
                     </ul>
                 </div>
             </div>
